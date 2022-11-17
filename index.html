@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média Escolar</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="https://github.com/LucasKashorro" target="_blank">
+        <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="Github Logo" id="github-logo">
+        <p>/LucasKashorro</p>
+    </a>
+
+    <main>
+        <h1>Calculadora de Média Escolar</h1>
+        <div id="input-container">
+            <div id="divisao-ano-container">
+                <label for="divisao-de-ano">Divisão de Ano:</label>
+                <select name="divisao-de-ano" id="divisao-de-ano">
+                    <option value="bimestre">Bimestre</option>
+                    <option value="trimestre">Trimestre</option>
+                </select>
+            </div>
+            <input type="text" id="nota1" placeholder="nota 1">
+            <input type="text" id="nota2" placeholder="nota 2">
+            <button id="add-nota" onclick="addNota()">Adicionar Nota</button>
+            <button id="submit-button" onclick="Calcular()">Calcular</button>
+        </div>
+        <div id="output-container">
+            <h5 id="output"></h5>
+        </div>
+    </main>
+</body>
+</html>

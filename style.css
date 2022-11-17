@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.1s
+}
+
+body {
+    background-image: linear-gradient( 0deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 100px;
+}
+
+a {
+    background: rgb(25,23,33);
+    background: linear-gradient(90deg, rgba(25,23,33,1) 0%, rgba(8,9,24,1) 79%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.3);
+    gap: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a img {
+    width: 50px;
+}
+
+a p {
+    color: white;
+}
+
+main {
+    background-color: rgb(216, 212, 212);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #00000067;
+    box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.3);
+    margin-bottom: 400px;
+    width: 560px;
+    display: grid;
+    justify-items: center;
+    color: rgba(26,33,64,1);
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#input-container {
+    margin: 10px 0 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+select, #submit-button {
+    font-size: 15px;
+}
+
+select, input {
+    outline: none;
+}
+
+select:hover, button:hover {
+    cursor: pointer;
+}
+
+#divisao-ano-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    height: 27px;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+input:hover {
+    cursor: text;
+}
+
+#add-nota {
+    align-self: flex-end;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: rgba(26,33,64,1);
+}
+
+#add-nota:hover {
+    color: rgb(49, 61, 122);
+}
+
+#submit-button {
+    align-self:center;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(26,33,64,1);
+    background-color: rgba(26,33,64,1);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#submit-button:hover {
+    background-color: rgb(49, 61, 122);
+}
+
+#output {
+    font-size: 19px;
+}
