@@ -23,11 +23,19 @@
                     <option value="trimestre">Trimestre</option>
                 </select>
             </div>
-            <input type="text" id="nota1" placeholder="nota 1">
-            <input type="text" id="nota2" placeholder="nota 2">
-            <button id="add-nota" onclick="addNota()">Adicionar Nota</button>
-            <button id="submit-button" onclick="Calcular()">Calcular</button>
+            <div class="nota-container" id="container1">
+                <input type="number" id="nota1" placeholder="nota 1">
+                <button class="excluir-btn" onclick="excluirNota(this.id)" id="1">X</button>
+            </div>
+            <div class="nota-container" id="container2">
+                <input type="number" id="nota2" placeholder="nota 2">
+                <button class="excluir-btn" onclick="excluirNota(this.id)" id="2">X</button>
+            </div>
         </div>
+            <div id="button-container">
+                <button id="add-nota" onclick="addNota()">Adicionar Nota</button>
+                <button id="submit-button" onclick="calcular()">Calcular</button>
+            </div >
         <div id="output-container">
             <h5 id="output"></h5>
         </div>
