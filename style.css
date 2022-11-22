@@ -65,26 +65,17 @@ h1 {
     gap: 5px;
 }
 
-label {
-    font-weight: bold;
-    font-size: 20px;
-}
 
-select, #submit-button {
+#submit-button {
     font-size: 15px;
 }
 
-select, input {
+input {
     outline: none;
 }
 
-select:hover, button:hover {
+button:hover {
     cursor: pointer;
-}
-
-#divisao-ano-container {
-    display: flex;
-    gap: 10px;
 }
 
 input {
